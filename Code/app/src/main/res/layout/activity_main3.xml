@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity3">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/student_image"
+            android:layout_width="184dp"
+            android:layout_height="143dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="84dp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            android:outlineSpotShadowColor="@color/black"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/candidate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="30dp"
+            android:text="Candidate Name:-"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/student_image" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginLeft="116dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/student_image"
+            app:layout_constraintTop_toBottomOf="@+id/student_image" />
+
+        <TextView
+            android:id="@+id/candidate_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Candidate Branch:-"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/candidate_name"
+            app:layout_constraintTop_toBottomOf="@+id/candidate_name" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/candidate_cgpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Candidate_CGPA:-"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/candidate_branch"
+            app:layout_constraintTop_toBottomOf="@+id/candidate_branch" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="421dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/candidate_cgpa"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/placement_details_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Placement offers"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="399dp">
+
+                <TextView
+                    android:id="@+id/company_names"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Company Name"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/salary_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="89dp"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toEndOf="@+id/company_names"
+                    android:layout_toRightOf="@+id/company_names"
+                    android:text="Package"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/company_names" />
+
+                <TextView
+                    android:id="@+id/companyname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="100dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/company_names" />
+
+                <TextView
+                    android:id="@+id/package1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toEndOf="@+id/company_names"
+                    android:layout_toRightOf="@+id/company_names"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/salary_package" />
+
+                <TextView
+                    android:id="@+id/companyname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="130dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/companyname1" />
+
+                <TextView
+                    android:id="@+id/package2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toEndOf="@+id/company_names"
+                    android:layout_toRightOf="@+id/company_names"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/package1" />
+
+                <TextView
+                    android:id="@+id/companyname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="160dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/companyname2" />
+
+                <TextView
+                    android:id="@+id/package3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toEndOf="@+id/company_names"
+                    android:layout_toRightOf="@+id/company_names"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/package2" />
+
+                <TextView
+                    android:id="@+id/companyname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="190dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/companyname3" />
+
+                <TextView
+                    android:id="@+id/package4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toEndOf="@+id/company_names"
+                    android:layout_toRightOf="@+id/company_names"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/package3" />
+
+                <TextView
+                    android:id="@+id/companyname5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="220dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/companyname4" />
+
+                <TextView
+                    android:id="@+id/package5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toEndOf="@+id/company_names"
+                    android:layout_toRightOf="@+id/company_names"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/package4" />
+
+                <TextView
+                    android:id="@+id/companyname6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="250dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/companyname4" />
+
+
+                <TextView
+                    android:id="@+id/package6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toEndOf="@+id/company_names"
+                    android:layout_toRightOf="@+id/company_names"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/package5" />
+
+                <TextView
+                    android:id="@+id/companyname7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="280dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/companyname6" />
+
+                <TextView
+                    android:id="@+id/package7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="280dp"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toEndOf="@+id/company_names"
+                    android:layout_toRightOf="@+id/company_names"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/package6" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll Number:-"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/candidate_branch"
+            app:layout_constraintEnd_toEndOf="@+id/candidate_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/candidate_name"
+            app:layout_constraintTop_toBottomOf="@+id/candidate_name"
+            app:layout_constraintVertical_bias="0.529" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.529" />
+
+
+        <ImageView
+            android:id="@+id/corner_shape"
+            android:layout_width="157dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/shape"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="4dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Back"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/yellow"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

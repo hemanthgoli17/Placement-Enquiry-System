@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="vvit_logo" type="id" />
+    <item name="placement_enquiry_text" type="id" />
+    <item name="textfield1" type="id" />
+    <item name="button" type="id" />
+    <item name="top_companies" type="id" />
+    <item name="amazon" type="id" />
+    <item name="dbs_bank" type="id" />
+    <item name="epam" type="id" />
+    <item name="dell" type="id" />
+    <item name="wipro" type="id" />
+    <item name="openText" type="id" />
+    <item name="infosys" type="id" />
+    <item name="cognizant" type="id" />
+    <item name="tcs" type="id" />
+</resources>
